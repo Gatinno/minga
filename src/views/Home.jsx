@@ -1,9 +1,9 @@
 import React from "react";
-import { Header } from "../layout";
-const Home = () => {
+const Home = ({setTitle, setButtons}) => {
+	setTitle('Tu tienda de comics favorita')
+	setButtons(true)
   return (
     <>
-      <Header />
       <main id='main'>
 				<div className='slideshow-container'>
 					<div className='mySlides fade'>
@@ -31,17 +31,7 @@ const Home = () => {
 					<span className='dot' onClick={()=> 1}></span>
 				</div>
 			</main>
-			<footer>
-				<div className='section-footer'>
-					<img className='logo' src='./logo.png' alt='logo' />
-					<p>Comics</p>
-				</div>
-				<p>©2022 Comic App.</p>
-				<div className='pages'>
-					<h3>Pages</h3>
-					<a href='#'>Comics</a>
-				</div>
-			</footer>
+			
     </>
   )
 }
