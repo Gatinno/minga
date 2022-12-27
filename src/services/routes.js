@@ -10,8 +10,8 @@ const RouterService = () => {
 		<Routes>
 			<Route element={<Layout title={title} buttons={buttons} />}>
 				<Route path='/' element={<Home setTitle={setTitle} setButtons={setButtons} />} />
-				<Route path='comics' element={<Comics />} />
-				<Route path='details/:id' element={<Details />} />
+				<Route path='comics' element={<Comics setTitle={setTitle} setButtons={setButtons} />} />
+				<Route path='details/:id' element={<Details setTitle={setTitle} setButtons={setButtons} />} />
 			</Route>
 		</Routes>
 	);

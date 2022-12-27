@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 const Home = ({setTitle, setButtons}) => {
-	setTitle('Tu tienda de comics favorita')
-	setButtons(true)
+	useEffect(() => {
+		setTitle('Tu tienda de comics favorita')
+		setButtons(true)
+	}, [])
   return (
     <>
       <main id='main'>
